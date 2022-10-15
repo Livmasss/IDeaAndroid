@@ -30,7 +30,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:background="#CAB44A"
+        android:background="@color/main_color"
         android:text="Topic name"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
