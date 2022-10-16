@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/black"
-    tools:context=".RegisterActivity2">
+    tools:context=".RegisterActivity1">
 
     <ImageView
         android:id="@+id/logo"
@@ -18,21 +18,21 @@
         app:srcCompat="@drawable/android_icon_192x192" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/uPassLayout"
+        android:id="@+id/uNameLayout"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logo">
+        app:layout_constraintTop_toBottomOf="@+id/uEmailLayout">
 
         <EditText
-            android:id="@+id/userPassword"
+            android:id="@+id/userName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="Пароль (лат. буквы, цифры, 8 знаков)"
+            android:text="Ваше имя"
             android:textColor="@color/white"
             android:textSize="25sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -46,26 +46,26 @@
             android:background="@color/main_color"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/userPassword" />
+            app:layout_constraintTop_toBottomOf="@+id/userName" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/uPassConfLayout"
+        android:id="@+id/uEmailLayout"
         style="@style/uPasswordLayout"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="40dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/uPassLayout">
+        app:layout_constraintTop_toBottomOf="@+id/logo">
 
         <EditText
-            android:id="@+id/userPasswordConfirmation"
+            android:id="@+id/userEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="text"
-            android:text="Повторите пароль"
+            android:text="Email"
             android:textColor="@color/white"
             android:textSize="25sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -79,7 +79,7 @@
             android:background="@color/main_color"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/userPasswordConfirmation" />
+            app:layout_constraintTop_toBottomOf="@+id/userEmail" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

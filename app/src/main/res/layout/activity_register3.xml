@@ -5,10 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/black"
-    tools:context=".RegisterActivity">
+    tools:context=".RegisterActivity2">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/logo"
         android:layout_width="170dp"
         android:layout_height="170dp"
         android:layout_marginTop="100dp"
@@ -18,13 +18,13 @@
         app:srcCompat="@drawable/android_icon_192x192" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/uNameLayout"
+        android:id="@+id/uPassLayout"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView">
+        app:layout_constraintTop_toBottomOf="@+id/logo">
 
         <EditText
             android:id="@+id/userName"
@@ -32,7 +32,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="Name"
+            android:text="Telegram (Можно оставить пустым)"
             android:textColor="@color/white"
             android:textSize="25sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -51,21 +51,21 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/uPasswordLayout"
+        android:id="@+id/uPassConfLayout"
         style="@style/uPasswordLayout"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/uNameLayout">
+        app:layout_constraintTop_toBottomOf="@+id/uPassLayout">
 
         <EditText
-            android:id="@+id/userEmail"
+            android:id="@+id/userPasswordConfirmation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="text"
-            android:text="Email"
+            android:text="Номер телефона (Необязательно)"
             android:textColor="@color/white"
             android:textSize="25sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -79,12 +79,12 @@
             android:background="@color/main_color"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/userEmail" />
+            app:layout_constraintTop_toBottomOf="@+id/userPasswordConfirmation" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <Button
-        android:id="@+id/next"
+        android:id="@+id/nextButton"
         android:layout_width="118dp"
         android:layout_height="61dp"
         android:layout_marginEnd="60dp"
