@@ -38,16 +38,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/header" />
 
-    <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        app:layout_constraintBottom_toBottomOf="@+id/header"
-        app:layout_constraintEnd_toEndOf="@+id/header"
-        app:layout_constraintTop_toTopOf="@+id/header"
-        app:srcCompat="@drawable/ic_launcher_foreground"
-        tools:ignore="SpeakableTextPresentCheck" />
-
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -67,7 +57,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:background="@color/ui_gray"
-                android:text="@string/text"
+                android:text="Content"
                 android:textColor="#FFFFFF"
                 android:textSize="20sp" />
         </LinearLayout>
